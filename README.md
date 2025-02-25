@@ -5,7 +5,7 @@ Mostly this is a convenience library that condences the basic entropy, 32bit, 64
 
 For more information about PCG random number generation, check the [PCG-Random website](http://www.pcg-random.org).
 
-The 64bit implementation here uses the Double Xor Shift Multiply (dxsm) version, which was [developed in 2019](https://github.com/numpy/numpy/issues/13635#issuecomment-506088698) and added to the canonical c++ implementation, but has not been added to the canonical c implementation.
+The 64bit implementation here uses the _Double Xor Shift Multiply_ (dxsm) version, which was [developed in 2019](https://github.com/numpy/numpy/issues/13635#issuecomment-506088698) and added to the canonical c++ implementation, but has not been added to the canonical c implementation.
 
 
 ## Usage
@@ -19,9 +19,9 @@ Also included by default are 32x2 generators, which combine 2 32bit generators t
 
 ## Building the demos
 
-Building the demos will require [meson](https://mesonbuild.com/Getting-meson.html) and probably the [ninja](https://ninja-build.org/) backend.
+Building the demos will require [meson](https://mesonbuild.com/Getting-meson.html) and the [ninja](https://ninja-build.org/) backend.
 
-The 64bit and 32x2 demos can be disabled in the meson.build file by changing the build_64bit and build32x2 variables.
+The 64bit and 32x2 demos can be disabled in the `meson.build` file by changing the `build_64bit` and `build32x2` variables.
 
 ```
 meson setup build
