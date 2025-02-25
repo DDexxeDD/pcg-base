@@ -1,7 +1,7 @@
 # PCG Random Number Generation, 32 and 64bit 2 file C Edition
 
 This code is similar to the [minimal c implementation](https://github.com/imneme/pcg-c-basic), however it also includes basic 64bit and entropy functionality from the full implementation.
-Mostly this is a convenience library that condences the basic entropy, 32bit, 64bit, and 32x2 64bit functionality from the canonical implementation in to 2 files.
+Mostly this is a convenience library that condenses the basic entropy, 32bit, 64bit, and 32x2 64bit functionality from the canonical implementation in to 2 files.
 
 For more information about PCG random number generation, check the [PCG-Random website](http://www.pcg-random.org).
 
@@ -10,7 +10,7 @@ The 64bit implementation here uses the _Double Xor Shift Multiply_ (dxsm) versio
 
 ## Usage
 
-There is no library to build, just drop pcg.h and pcg.c from the `source` folder into your project.
+There is no library to build, just drop `pcg.h` and `pcg.c` from the `source` folder into your project.
 
 64bit, which requires a compiler with `__uint128_t` support, is enabled by default.  If you do not want 64bit generators, or your compiler does not support `__uint128_t` (MSVC), you must define `PCG_NO_128BIT`.
 
