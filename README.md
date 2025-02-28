@@ -21,7 +21,7 @@ Also included by default are 32x2 generators, which combine 2 32bit generators t
 
 Building the demos will require [meson](https://mesonbuild.com/Getting-meson.html) and the [ninja](https://ninja-build.org/) backend.
 
-The 64bit and 32x2 demos can be disabled in the `meson.build` file by changing the `build_64bit` and `build32x2` variables.
+The 64bit and 32x2 demos can be disabled in the `meson.build` file by changing the `build_64bit` and `build_32x2` variables.
 
 ```
 meson setup build
