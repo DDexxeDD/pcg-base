@@ -12,6 +12,8 @@ The 64bit implementation here uses the _Double Xor Shift Multiply_ (dxsm) versio
 
 There is no library to build, just drop `pcg.h` and `pcg.c` from the `source` folder into your project.
 
+Check [basic.c](examples/basic.c) for the simplest usage example.
+
 64bit, which requires a compiler with `__uint128_t` support, is enabled by default.  If you do not want 64bit generators, or your compiler does not support `__uint128_t` (MSVC), you must define `PCG_NO_128BIT`.
 
 Also included by default are 32x2 generators, which combine 2 32bit generators to acheive 64bit generation.  If you do not want to build support for these you must define `PCG_NO_32X2`.
